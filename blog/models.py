@@ -9,3 +9,6 @@ class Post (models.Model):
     date = models.DateTimeField()
     text = models.TextField()
     image = models.ImageField(upload_to='event_images/')
+
+    def get_summary(sefl):
+        return sefl.text[:120]
