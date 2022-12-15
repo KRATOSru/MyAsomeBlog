@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load static %}
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -93,7 +94,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" aria-current="page" href="#">About me</a>
+              <a class="nav-link" href="{% static 'About me' %}">About me</a>
               <a class="nav-link" href="#">Facebook</a>
               <a class="nav-link" href="#">Blog</a>
             </div>
@@ -115,6 +116,11 @@
                 >Mail me</a
               >
             </p>
+
+            <img src="{% static '2022-03_Building_a_blog_using_Next_js_and_Contentful.jpeg' %}" alt=""
+            height="500"
+            width="500"
+            class="img-fluid">
           </div>
         </div>
       </section>
