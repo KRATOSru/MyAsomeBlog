@@ -83,7 +83,7 @@
         style="background-color: #efc07a"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="{% url 'home' %}">My awesome blog</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -110,7 +110,7 @@
       <h1 class="pt-5 pb-5">Recent posts</h1>
 
       {% for post in posts.all %}
-      <a href=""><h3>{{ post.title }}</h3></a>
+      <a href="{% url 'specific_post' post.id %}"><h3>{{ post.title }}</h3></a>
       <br />
       <img
         src="{{ post.image.url }}"

@@ -80,7 +80,7 @@
         style="background-color: #efc07a"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+           <a class="navbar-brand"href="#">My awesome blog</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -96,7 +96,7 @@
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="{% static 'About me' %}">About me</a>
               <a class="nav-link" href="#">Facebook</a>
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="{% url 'showblog' %}">Blog</a>
             </div>
           </div>
         </div>

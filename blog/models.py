@@ -10,5 +10,8 @@ class Post (models.Model):
     text = models.TextField()
     image = models.ImageField(upload_to='event_images/')
 
-    def get_summary(sefl):
-        return sefl.text[:120]
+    def get_summary(self):
+        return self.text[:120]
+
+    def __str__(self):
+        return self.title
